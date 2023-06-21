@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    /* COLOR SCHEME */
+    --clr-text: #1c1d18;
+    --clr-body: #1c1d18;
+    --clr-background: #fcf5f5;
+    --clr-primary: #1a0089;
+    --clr-secondary: #5d94c1;
+    --clr-tertiary: #ffe3e3;
+    --clr-black: #1c1d18;
+    --clr-white: #fcf5f5;
+    /* FONT STYLES */
+    --ff-head: 'Geologica', sans-serif;
+    --ff-body: 'Geologica', sans-serif;
+    --ff-accent: 'Geologica', sans-serif;
+    /* TYPOGRAPHY SCALE */
+    --fs-300: clamp(0.69rem, calc(0.66rem + 0.18vw), 0.80rem);
+    --fs-400: clamp(0.83rem, calc(0.78rem + 0.29vw), 1.00rem);
+    --fs-500: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+    --fs-600: clamp(1.20rem, calc(1.07rem + 0.63vw), 1.56rem);
+    --fs-700: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+    --fs-800: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
+    --fs-900: clamp(2.07rem, calc(1.73rem + 1.70vw), 3.05rem);
+    --fs-1000: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-text: #fcf5f5;
+        --clr-body: #fcf5f5;
+        --clr-background: #1c1d18;
+        --clr-primary: #1a0089;
+        --clr-secondary: #42484d;
+        --clr-tertiary: #ffe3e3; 
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* *Activate border to see your elements highlighted for your convenience* */
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+/* ** */
+html {
+    color-scheme: light dark;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-size: var(--fs-400);
+    font-family: var(--ff-body);
+    line-height: 1.5;
+    color: var(--clr-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--clr-text);
+    font-family: var(--ff-head);
+    line-height: 1.1;
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--fs-1000);
+}
+
+h2 {
+    font-size: var(--fs-700);
+}
+
+h3 {
+    font-size: var(--fs-600);
+}
+
+a,
+li {
+    color: var(--clr-primary);
+    font-weight: 300;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:hover,
+a:focus {
+    color: var(--clr-tertiary);
+}
+
+.site-wrapper {
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.site-flow > * + * {
+    margin-top: var(--flow-content, 1em);
+}
+
+nav {
+    margin-left: 1rem;
+}
+
+header {
+    background-image: url('./assets/nohm-bg-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #c3c9ce;
+    background-blend-mode: multiply;
+}
+
+.logo {
+    color: var(--clr-primary);
+    font-weight: 700;
+    margin-left: 4rem;
+    font-size: var(--fs-700);
+}
+
+.user-avatar {
+    width: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.logo,
+.user-avatar {
+    margin-top: 1.5rem;
+}
+
+.earth-icon {
+    width: 1.5rem;
+    margin-right: .5rem;
+}
+
+.user-flex-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.links-flex-container {
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+    font-size: var(--fs-400);
+}
+
+.link-space {
+    margin-left: 7rem;
+}
+
+.text {
+    margin-top: 1rem;
+    padding-bottom: 6rem;
+    margin-left: 6rem;
+}
+
+.switzerland {
+    width: 60%;
+    fill: var(--clr-white)
+}
+
+.wasserauen {
+    width: 45%;
+    margin-left: 7rem;
+}
+
+.cta {
+    margin-top: 10rem;
+    margin-left: 22rem;
+    border-radius: 15px;
+    border: 3px solid var(--clr-tertiary);
+    padding: 1rem 4rem;
+    background-color: var(--clr-primary);
+    font-size: var(--fs-600);
+    font-weight: 700;
+    font-family: var(--ff-head);
+    color: var(--clr-white);
+    margin-bottom: 5rem;
+}
+
+.cta:hover {
+    border: 3px solid var(--clr-black);
+    background-color: var(--clr-tertiary);
+    color: var(--clr-black);
+    cursor: pointer;
+}

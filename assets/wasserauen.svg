@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="wasserauen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 518.97 84.71">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #ffe3e3;
+        font-family: Geologica-Medium, Geologica;
+        font-size: 72px;
+        font-variation-settings: 'wght' 500, 'CRSV' 0, 'SHRP' 0, 'slnt' 0;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="sky-bg">
+    <g id="wasserauen">
+      <text class="cls-3" transform="translate(4.86 61.2)"><tspan class="cls-1" x="0" y="0">W</tspan><tspan x="71.6" y="0">ASSER</tspan><tspan class="cls-2" x="306.25" y="0">A</tspan><tspan x="356.22" y="0">UEN</tspan></text>
+    </g>
+  </g>
+</svg>
