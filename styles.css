@@ -109,10 +109,6 @@ a:focus {
     margin-inline: auto;
 }
 
-.site-flow > * + * {
-    margin-top: var(--flow-content, 1em);
-}
-
 nav {
     margin-left: 1rem;
 }
